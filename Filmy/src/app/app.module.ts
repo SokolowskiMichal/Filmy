@@ -7,7 +7,7 @@ import { ListaComponent } from './lista/lista.component';
 import { DetaleComponent } from './detale/detale.component';
 
 import { FilmyService } from './filmy.service';
-
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -17,7 +17,8 @@ import { FilmyService } from './filmy.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [FilmyService],
   bootstrap: [AppComponent]

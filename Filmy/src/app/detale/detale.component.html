@@ -1,1 +1,6 @@
-<img src="assets/{{film.tytul}}.jpg" width="200px">
+<div *ngIf="film">
+    <img src="assets/{{film.tytul}}.jpg" width="200px">
+    <h1>{{film.tytul}} ({{film.data_premiery}})</h1>
+    <p>{{film.opis}}</p>
+</div>
+<button (click)="cofnij()">Cofnij</button>
